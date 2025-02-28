@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СЮДАААА</title>
+    <style>
+
+body {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(var(--tg-viewport-height, 100vh));
+            flex-direction: column;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.5;
+            overflow: hidden;
+            position: relative;
+        }
+
+        html, body {
+        overflow-x: hidden;
+        max-width: 100vw;
+        touch-action: pan-y; /* Разрешает вертикальный скролл, но блокирует горизонтальный */
+        overscroll-behavior: contain; /* Предотвращает перетаскивание страницы */
+    }
+
+    </style>
+</head>
+
+<script>
+    if (window.Telegram && Telegram.WebApp) {
+        Telegram.WebApp.expand();
+    }
+</script>
+
+<body>
+    <div class="text-top">Добро пожаловать!</div>
